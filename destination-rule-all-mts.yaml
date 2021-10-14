@@ -26,7 +26,7 @@ spec:
     labels:
       version: v3
 ---
-apiVersion: networking.istio.io/v1alpha3apiVersion: networking.istio.io/v1alpha3
+apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
   name: productpage
