@@ -1,6 +1,8 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
+  annotations: 
+    external-dns.alpha.kubernetes.io/target: apg-weu-001.vmm.be
   name: bookinfo-gateway
 spec:
   selector:
@@ -16,7 +18,7 @@ spec:
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  external-dns.alpha.kubernetes.io/target: apg-weu-001.vmm.be
+  
   name: bookinfo
 spec:
   hosts:
