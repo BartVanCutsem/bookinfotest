@@ -8,6 +8,7 @@ metadata:
     grafana_folder: test_dashboard
   name: bookinfo
 data:
+    another.json: {}
     testdb.json: |
         {
           "annotations": {
